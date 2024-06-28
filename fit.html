@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#log">Log Activity</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#charts">Charts</a></li>
+            
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Your Personal Fitness Tracker</h2>
+            <p>Track your activities, view statistics, and get personalized workout plans.</p>
+            <a href="#dashboard" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="dashboard">
+        <div class="container">
+            <h2>Dashboard</h2>
+            <div class="charts">
+                <canvas id="activityChart" width="400" height="200"></canvas>
+            </div>
+            <div class="statistics">
+                <h3>Statistics</h3>
+                <ul>
+                    <li>Total Distance: <span id="totalDistance">0 km</span></li>
+                    <li>Calories Burned: <span id="caloriesBurned">0 kcal</span></li>
+                    
+                </ul>
+            </div>
+            <div class="recommendations">
+                <h3>Recommended Workout Plan</h3>
+                <p>Based on your goals and activities, here's a personalized plan for you:</p>
+                <div class="task-icons">
+                    <img src="run.png" alt="Running Icon" title="Running for 30 minutes">Running for 30 minutes
+                    <img src="cyc.png" alt="Cycling Icon" title="Cycling for 45 minutes">Cycling for 45 minutes
+                    <img src="yoga.png" alt="Yoga Icon" title="Yoga for 45 minutes">Yoga for 45 minutes
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="log">
+        <div class="container">
+            <h2>Log Activity</h2>
+            <form id="activityForm">
+                <label for="activityType">Activity Type:</label>
+                <select id="activityType" name="activityType">
+                    <option value="running">Running</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="weights">Weight Training</option>
+                </select><br>
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" name="duration" required><br>
+                <label for="calories">Calories Burned:</label>
+                <input type="number" id="calories" name="calories" required><br>
+                <button type="submit">Log Activity</button>
+                
+            </form>
+        </div>
+    </section>
+    
+
+    <section id="profile">
+        <div class="container">
+            <h2>Profile</h2>
+            <form id="profileForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label for="goal">Fitness Goal:</label>
+                <input type="text" id="goal" name="goal"><br>
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="charts">
+        <div class="container">
+            <h2>Charts</h2>
+            <div class="chart-container">
+                <canvas id="progressChart" width="600" height="300"></canvas>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="settings">
+        <div class="container">
+            <h2>Settings</h2>
+            <p>Adjust your account settings.</p>
+           
+        </div>
+    </section>
+
+    <footer>
+        <p> &copy;2024 Fitness Tracker.. All rights reserved <br>Designed by web developer.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

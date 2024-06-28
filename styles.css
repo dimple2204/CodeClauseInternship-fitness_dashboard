@@ -1,0 +1,356 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+#hero {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#hero .btn {
+    display: inline-block;
+    background-color: #009688;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn:hover {
+    background-color: #00796b;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.statistics, .recommendations {
+    margin-top: 20px;
+}
+
+.statistics h3, .recommendations h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.statistics ul {
+    list-style-type: none;
+}
+
+.statistics ul li {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.recommendations p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+.task-icons {
+    display: flex;
+    justify-content: space-between; /
+    align-items: center; 
+    margin-top: 10px; 
+}
+
+.task-icons img {
+    width: 80px; 
+    height: auto; 
+}
+.task-icons title {
+    color: #45a049;
+
+}
+
+
+.chart-container {
+    margin-top: 20px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#log-activity {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#log-activity h2 {
+    font-size: 2.5rem;
+    color: #009688;
+    margin-bottom: 20px;
+}
+
+.activity-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.activity-btn i {
+    margin-right: 10px;
+}
+
+.activity-btn:hover {
+    background-color: #45a049;
+}
+#activityForm {
+    position: relative;
+}
+
+.form-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px; 
+    height: auto; 
+    margin-top: 10px; 
+    margin-right: 10px; 
+}
+
+
+
+#profile {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#profile h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-photo img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.profile-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="number"],
+.profile-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.profile-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.profile-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Charts section */
+#charts {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#charts h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="number"],
+    form select {
+        padding: 8px;
+    }
+
+    form button[type="submit"] {
+        padding: 10px 15px;
+    }
+}
